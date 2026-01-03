@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "required": ["item_name","item_url","item_price","item_category","item_status"],
+  "properties": {
+    "item_name": {"type":"string","minLength":1},
+    "item_url": {"type":"string","format":"uri"},
+    "item_price": {"type":"string"},
+    "item_category": {"type":"string"},
+    "item_status": {"type":"string"}
+  },
+  "additionalProperties": false
+}
